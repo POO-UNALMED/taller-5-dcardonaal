@@ -12,11 +12,10 @@ public class Zoologico {
 		
 	}
 	
-	public Zoologico(String nombre, String ubicacion, List<Zona> zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		super();
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
-		this.zonas = zonas;
 	}
 	
 	public int cantidadTotalAnimales() {
