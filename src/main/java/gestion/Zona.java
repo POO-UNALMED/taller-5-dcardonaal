@@ -15,19 +15,15 @@ public class Zona {
 		super();
 		this.nombre = nombre;
 		this.zoo = zoo;
-		this.animales = animales;
 		
 	}
 	
 	public void agregarAnimales(Animal animal) {
 		animales.add(animal);
 		
-		
 	}
 	
-	public void agregarZonas(String nombre, Zoologico zoo) {
-		Zona zona = new Zona(nombre, zoo);
-	}
+
 	
 	public int cantidadAnimales() {
 		return animales.size();
