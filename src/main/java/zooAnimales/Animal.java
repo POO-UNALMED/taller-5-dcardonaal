@@ -43,7 +43,7 @@ public class Animal {
 			return mensaje;
 			
 		} else {
-			String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s", nombre, edad, habitat, genero, this.zona.getNombre());
+			String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s", nombre, edad, habitat, genero);
 			return mensaje;
 		}
 		
