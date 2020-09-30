@@ -39,12 +39,12 @@ public class Animal {
 	
 	public String toString() {
 		if(zona != null){
-			String mensaje = String.format("Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, this.zona.getNombre(), this.zona.getZoo().getNombre());
+			String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, this.zona.getNombre(), this.zona.getZoo().getNombre());
 			return mensaje;
 			
 		}
 		
-		String mensaje = String.format("Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s", nombre, edad, habitat, genero, this.zona.getNombre());
+		String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s", nombre, edad, habitat, genero, this.zona.getNombre());
 		return mensaje;
 		
 		
