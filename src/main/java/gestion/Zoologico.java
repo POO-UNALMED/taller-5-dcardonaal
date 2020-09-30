@@ -56,7 +56,7 @@ public class Zoologico {
 		
 	}
 
-	public void setZonas(List<Zona> zonas) {
+	public void setZona(List<Zona> zonas) {
 		this.zonas = zonas;
 	}
 	
