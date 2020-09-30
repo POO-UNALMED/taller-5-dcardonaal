@@ -42,10 +42,11 @@ public class Animal {
 			String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, this.zona.getNombre(), this.zona.getZoo().getNombre());
 			return mensaje;
 			
+		} else {
+			String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s", nombre, edad, habitat, genero, this.zona.getNombre());
+			return mensaje;
 		}
 		
-		String mensaje = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s", nombre, edad, habitat, genero, this.zona.getNombre());
-		return mensaje;
 		
 		
 	}
