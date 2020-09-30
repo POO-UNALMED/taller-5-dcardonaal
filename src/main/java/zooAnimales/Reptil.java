@@ -4,7 +4,7 @@ import gestion.Zona;
 import java.util.*;
 
 public class Reptil extends Animal{
-	private List<Reptil> listado;
+	private static List<Reptil> listado;
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
@@ -29,7 +29,7 @@ public class Reptil extends Animal{
 		return serpientes+iguanas;
 	}
 	
-	public Reptil crearIguana(String nombre, int edad, String genero) {
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		Reptil iguana = new Reptil(nombre, edad, "humedal", genero,
 				"verde", 3);
 		listado.add(iguana);
@@ -38,7 +38,7 @@ public class Reptil extends Animal{
 		
 	}
 	
-	public Reptil crearSerpiente(String nombre, int edad, String genero) {
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		Reptil serpiente = new Reptil(nombre, edad, "jungla", genero,
 				"blanco", 1);
 		listado.add(serpiente);
