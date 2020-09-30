@@ -4,7 +4,7 @@ import gestion.Zona;
 import java.util.*;
 
 public class Ave extends Animal {
-	private List<Ave> listado;
+	private static List<Ave> listado;
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
@@ -27,19 +27,20 @@ public class Ave extends Animal {
 		return "volar";
 	}
 	
-	public void crearHalcon(String nombre, int edad, String genero) {
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		Ave halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		listado.add(halcon);
 		halcones++;
+		return halcon;
 		
 	}
 	
 
-	public void crearAguila(String nombre, int edad, String genero) {
+	public static Ave crearAguila(String nombre, int edad, String genero) {
 		Ave aguila = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 		listado.add(aguila);
 		aguilas++;
-		
+		return aguila;
 	}
 	
 	

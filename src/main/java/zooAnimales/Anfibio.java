@@ -5,7 +5,7 @@ import java.util.*;
 import gestion.Zona;
 
 public class Anfibio extends Animal{
-	private List<Anfibio> listado;
+	private static List<Anfibio> listado;
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -33,18 +33,20 @@ public class Anfibio extends Animal{
 		return "saltar";
 	}
 	
-	public void crearRana(String nombre, int edad, String genero) {
+	public static Anfibio crearRana(String nombre, int edad, String genero) {
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero,
 			"rojo", true);
 		listado.add(rana);
 		ranas++;
+		return rana;
 	}
 	
-	public void crearSalamandra(String nombre, int edad, String genero) {
+	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		Anfibio salamandra = new Anfibio(nombre, edad, "selva", genero,
 				"negro y amarillo", false);
 			listado.add(salamandra);
 			salamandras++;
+			return salamandra;
 	}
 	
 	
