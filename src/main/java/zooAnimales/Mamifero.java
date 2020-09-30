@@ -4,7 +4,7 @@ import gestion.Zona;
 import java.util.*;
 
 public class Mamifero extends Animal {
-	private List<Mamifero> listado;
+	private static List<Mamifero> listado;
 	public static int caballos;
 	public static int leones;
 	private boolean pelaje;
@@ -27,14 +27,14 @@ public class Mamifero extends Animal {
 		return leones+caballos;
 	}
 	
-	public void crearCaballo(String nombre, int edad, String genero) {
+	public static void crearCaballo(String nombre, int edad, String genero) {
 		Mamifero caballo = new Mamifero(nombre, edad, "pradera", genero,true, 4);
 		listado.add(caballo);
 		caballos++;
 
 		
 	}
-	public void crearLeon(String nombre, int edad, String genero) {
+	public static void crearLeon(String nombre, int edad, String genero) {
 		Mamifero leon = new Mamifero(nombre, edad, "selva", genero,true, 4);
 		listado.add(leon);
 		leones++;
