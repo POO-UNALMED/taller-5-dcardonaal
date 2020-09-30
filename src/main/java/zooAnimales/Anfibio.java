@@ -13,7 +13,9 @@ public class Anfibio extends Animal{
 	
 	
 	
-	
+	public Anfibio() {
+		
+	}
 
 
 	public Anfibio(String nombre, int edad, String habitat, String genero, Zona zona,

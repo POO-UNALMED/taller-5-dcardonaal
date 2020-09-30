@@ -8,6 +8,9 @@ public class Zoologico {
 	private List<Zona> zonas;
 	private int total=0;
 	
+	public Zoologico() {
+		
+	}
 	
 	public Zoologico(String nombre, String ubicacion, List<Zona> zonas) {
 		super();
