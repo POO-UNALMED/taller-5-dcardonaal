@@ -26,7 +26,8 @@ public class Anfibio extends Animal{
 	}
 
 	public static int cantidadAnfibios() {
-		return ranas+salamandras;
+		int cantidad = ranas+salamandras;
+		return cantidad;
 	}
 	
 	public String movimiento() {

@@ -5,8 +5,8 @@ import java.util.*;
 
 public class Mamifero extends Animal {
 	private static List<Mamifero> listado;
-	public static int caballos=0;
-	public static int leones=0;
+	public static int caballos;
+	public static int leones;
 	private boolean pelaje;
 	private int patas;
 	private static int conteo;
@@ -24,7 +24,8 @@ public class Mamifero extends Animal {
 	}
 	
 	public static int cantidadMamiferos() {
-		return leones+caballos;
+		int cantidad = leones+caballos;
+		return cantidad;
 	}
 	
 	public static Mamifero crearCaballo(String nombre, int edad, String genero) {

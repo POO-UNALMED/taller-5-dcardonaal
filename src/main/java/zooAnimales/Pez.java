@@ -28,7 +28,8 @@ public class Pez extends Animal {
 	}
 	
 	public static int cantidadPeces() {
-		return salmones+bacalaos;
+		int cantidad = salmones+bacalaos;
+		return cantidad;
 	}
 	
 	public static Pez crearSalmon(String nombre, int edad, String genero) {
