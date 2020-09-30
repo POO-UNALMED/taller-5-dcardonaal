@@ -1,6 +1,6 @@
 package zooAnimales;
 
-import java.util.*;
+
 import gestion.Zona;
 
 public class Animal {
@@ -12,6 +12,7 @@ public class Animal {
 	private Zona zona;
 	
 	public Animal() {
+		totalAnimales++;
 		
 	}
 	
