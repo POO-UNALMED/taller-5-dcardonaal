@@ -51,8 +51,9 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 
-	public List<Zona> getZonas() {
+	public List<Zona> getZona() {
 		return zonas;
+		
 	}
 
 	public void setZonas(List<Zona> zonas) {
