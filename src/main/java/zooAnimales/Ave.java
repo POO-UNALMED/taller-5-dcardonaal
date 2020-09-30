@@ -27,7 +27,7 @@ public class Ave extends Animal {
 	
 	public void crearHalcon(String nombre, int edad, String habitat, String genero, Zona zona,
 	String colorPlumas) {
-		Ave halcon = new Ave(nombre, edad, "montañas", genero, zona, "cafe glorioso");
+		Ave halcon = new Ave(nombre, edad, "montanas", genero, zona, "cafe glorioso");
 		listado.add(halcon);
 		halcones++;
 		
