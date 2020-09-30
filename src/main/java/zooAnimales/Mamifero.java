@@ -4,7 +4,7 @@ import gestion.Zona;
 import java.util.*;
 
 public class Mamifero extends Animal {
-	private static List<Mamifero> listado;
+	private static List<Mamifero> listado = new ArrayList();
 	public static int caballos;
 	public static int leones;
 	private boolean pelaje;
