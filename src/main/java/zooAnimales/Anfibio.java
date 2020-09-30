@@ -5,7 +5,7 @@ import java.util.*;
 import gestion.Zona;
 
 public class Anfibio extends Animal{
-	private static List<Anfibio> listado = new ArrayList<>();
+	private static List<Anfibio> listado = new ArrayList();
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
