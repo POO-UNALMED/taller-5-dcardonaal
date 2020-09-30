@@ -32,8 +32,9 @@ public class Animal {
 	
 	
 	public static String totalPorTipo() {
-		return "Mamiferos: "+ Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + 
-				"\nAnfibios: " + Anfibio.cantidadAnfibios()+"";
+		String mensaje = "Mamiferos: "+ Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + 
+				"\nAnfibios: " + Anfibio.cantidadAnfibios();
+		return mensaje;
 	}
 	
 	
