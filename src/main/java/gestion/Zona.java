@@ -5,7 +5,11 @@ import java.util.*;
 public class Zona {
 	private String nombre;
 	private Zoologico zoo;
-	private ArrayList<Animal> animales;
+	private List<Animal> animales;
+	
+	public Zona() {
+		
+	}
 	
 	public Zona(String nombre, Zoologico zoo) {
 		super();
@@ -45,7 +49,7 @@ public class Zona {
 		this.zoo = zoo;
 	}
 
-	public ArrayList<Animal> getAnimales() {
+	public List<Animal> getAnimales() {
 		return animales;
 	}
 
